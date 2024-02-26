@@ -5,20 +5,65 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lab 2</title>
     <link rel="stylesheet" type="text/css" href="style.css"/>
+    <script src="main.js"></script>
+    
 </head>
 <body>
-   <header> <h1>Yousef Al Khalil</h1>
-   <p>Aspiring <i>Business Technology</i> professional with a track record of success in <br>
-    marketing and data analytics currently attending Toronto Metropolitan University</p> </header> 
    
+   <header> <h1>Yousef Al Khalil</h1>
+
+    <nav>
+      
+
+      
+     <div class= 'dropdown'>
+        <button onmouseover="mOver(this)" onmouseout="this.innerHTML='Courses'" onclick="myFunction()" class="dropbtn">Courses</button>
+        <div id="myDropdown" class="dropdown-content">
+            <a href="#MKT100">MKT100</a>
+            <a href="#ITM200">ITM200</a>
+            <a href="#CMN279">CMN279</a>
+            <a href="#ITM301">ITM301</a>
+            <a href="#ITM500">ITM500</a>
+
+        </div>
+    </div>
+
+    
+    <div class= 'dropdown1'>
+        <button id="btn2" onmouseover="mOver(this)" onmouseout="this.innerHTML='Education'"  onclick="myFunction1()" class="dropbtn1" >Education</button>
+        <div id="myDropdown1" class="dropdown-content1">
+            <a href="#uni">University</a>
+            <a href="#highschool">Highschool</a>
+           
+
+        </div>
+    </div>
+    <a onmouseover="mOver(this)" onmouseout="this.innerHTML='Awards'" class = 'links' href="#awards">Awards</a>
+    <a onmouseover="mOver(this)" onmouseout="this.innerHTML='Extracurriculars'" class = 'links' href="#section1">Extracurriculars</a>
+    <a onmouseover="mOver(this)" onmouseout="this.innerHTML='Contact Info'" class = 'links' href="#contact">Contact Info</a>
+            
+      
+
+
+    </nav>
+
+<br> <br><hr>
+    
+ 
+<img class ="image"src="images/portrait.jpg" alt="Picture of Yousef Al Khalil" onclick="enlarge(this)"> <br> <hr>
+<button onclick = "askName()">Enter Name</button>
+    <h2 id="displayName"></h2>   
+<p>I'm an aspiring <i>Business Technology</i> professional with a track record of success in <br>
+    marketing and data analytics currently attending Toronto Metropolitan University</p> </header> 
+
    <main>
     <h2>Education</h2>
     <ul>
-        <li><strong>BComm, Business Technology Management CO-OP</strong>   <a href="https://www.torontomu.ca/">Toronto Metropolitan University </a> 
+        <li id="uni"><strong>BComm, Business Technology Management CO-OP</strong>  <a href="https://www.torontomu.ca/">Toronto Metropolitan University </a> 
             <br> <span style="color: white;"><time datetime="2021-09"> September, 2021</time> - present</span>
         </li>
         <br>
-        <li>
+        <li id="highschool">
            <Strong>High School Diploma </strong>- <a href="https://www.dpcdsb.org/goetz">Father Michael Goetz </a>  <br>  
             <span style="color: white;"> <time datetime="2017-09"> September, 2017</time> - <time datetime="2021-06"> June, 2017</time>  </span>
         </li>
@@ -34,20 +79,20 @@
        <br>
        <h3>Course Highlights (In order of Usefulness)</h3>
         <ol>
-            <li><dt><strong>MKT100 - Principles of Marketing</strong></dt></li> <br>
+            <li id="MKT100"><dt><strong>MKT100 - Principles of Marketing</strong></dt></li> <br>
             <dd>This course provides an introduction to the essential elements of marketing, covering the theories, principles, and concepts related to market behavior. I found this course to be the most useful because my role during my coop was as a Marketing Specialist at 4s Consulting. This course helped me create effective digital media by helping me learn and effectively apply the marketing theories and concepts to create effective marketing campaigns.</dd><br>
-            <li><dt><strong>ITM200 - Fundamentals of Programming</strong></dt></li> <br>
+            <li id="ITM200"><dt><strong>ITM200 - Fundamentals of Programming</strong></dt></li> <br>
             <dd>This course focuses on the basic principles of designing and implementing object-oriented, event-driven programming specifically Python for business applications.</dd><br>
-            <li><dt><strong>CMN279 - Intro to Professional Communication</strong></dt></li> <br>
+            <li id="CMN279"><dt><strong>CMN279 - Intro to Professional Communication</strong></dt></li> <br>
             <dd>This course familiarizes students with modern strategies for effective communication in professional settings.</dd><br>
-            <li><dt><strong>ITM301 - IT Infrastructure</strong></dt></li> <br>
+            <li id="ITM301"><dt><strong>ITM301 - IT Infrastructure</strong></dt></li> <br>
             <dd>This course provides an introduction to computer hardware/software and communication networks. </dd><br>
-            <li><dt><strong>ITM500 - Data and information Management</strong></dt></li> <br>
+            <li id="ITM500"><dt><strong>ITM500 - Data and information Management</strong></dt></li> <br>
             <dd>This course provides the students with an introduction to the core concepts in data and information management. It teaches students SQL language to perform queries on data sets.</dd>
         </ol>
     </d1>
 <hr>
-    <h2>Educational Awards</h2>
+    <h2 id="awards">Educational Awards</h2>
 
     <ul><li><strong><dt>Dean's List</dt></strong></li>
         <dd>Achieved Ted Rogers School of Management Dean's list in 2021 &amp; 2022 academic years.</dd> <br>
@@ -56,7 +101,7 @@
     </ul>
 <hr>
 
-<h2>Extra-curricular Activities</h2>
+<h2 id="section1">Extra-curricular Activities</h2>
     <ul>
     <li><strong>TMUPCC - Events Associate</strong>  </li>
     <li> <strong>TMU Volleyball Intramurals - Captain</strong></li>
@@ -65,7 +110,7 @@
    </main>
 <hr>
    <footer>
-    <h2>Contact Info:</h2>
+    <h2 id="contact">Contact Info:</h2>
      
         <table>
            <tr>
