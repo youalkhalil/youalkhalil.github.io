@@ -61,8 +61,110 @@ window.onclick = function(event){
 function mOver(some_tag){
   some_tag.innerHTML = "Click Me";
   some_tag.style.color = "blue";
-  
 }
 
+// function to save and log form data
+function saveFormdata() {
+  
+  
+  
+  // saving first and last name
+  var firstname = document.getElementById('fname').value; 
+  localStorage.setItem("firstname", firstname); 
+  
+  // Log the stored name to the console
+  console.log(localStorage.getItem("firstname"));
+
+    
+    var lastname = document.getElementById('lname').value; 
+    localStorage.setItem("lastname", lastname); 
+    
+    // Log the stored username to the console
+    console.log(localStorage.getItem("lastname"));
+
+     // save and log email
+     var email = document.getElementById('email').value; 
+     localStorage.setItem("email", email); 
+     
+     // Log the stored username to the console
+     console.log(localStorage.getItem("email"));
+ 
+     //log and store checkbox selection
+
+     if (document.getElementById('general').checked) {
+      var general = document.getElementById('general').value;
+      localStorage.setItem("general", general); 
+      
+      // Log to console
+      console.log(localStorage.getItem("general"));
+     }
+
+     else if(document.getElementById('complaint').checked){
+      var complaint = document.getElementById('complaint').value; 
+      localStorage.setItem("complaint", complaint); 
+      
+      // Log the stored username to the console
+      console.log(localStorage.getItem("complaint"));
+
+     }
+     else if(document.getElementById('partnership').checked){
+      var partnership = document.getElementById('partnership').value; 
+      localStorage.setItem("partnership", partnership); 
+      
+      // Log  to the console
+      console.log(localStorage.getItem("partnership"));}
+
+      else if(document.getElementById('feedback').checked){
+        var feedback = document.getElementById('feedback').value; 
+        localStorage.setItem("feedback", feedback); 
+        
+        // Log to the console
+        console.log(localStorage.getItem("feedback"));}
+
+        var hear = document.getElementById('hear').value; 
+        localStorage.setItem("hear", hear); 
+        
+        // Log to the console
+        console.log(localStorage.getItem("hear"));
+
+        //log and store text box
+
+        var message = document.getElementById('message').value;
+        localStorage.setItem("message", message);
+        
+        // Log to the console
+        console.log(localStorage.getItem("message"));
+
+        //log and store rating 0-100
+
+        var rating = document.getElementById('rating').value; 
+        localStorage.setItem("rating", rating); 
+        
+        // Log to the console
+        console.log(localStorage.getItem("rating"));
+        
+        //store and log value and selection of radio buttons 
+        if (document.getElementById('yes').checked) {
+          var yes = document.getElementById('yes').value; 
+          localStorage.setItem("yes", yes); 
+
+          
+          // Log to the console
+          console.log(localStorage.getItem("yes"));
+         }
+         else if (document.getElementById('no').checked) {
+          var no = document.getElementById('no').value; 
+          localStorage.setItem("no", no); 
+          
+          // Log to the console
+          console.log(localStorage.getItem("no"));
 
 
+         }
+         
+    
+         
+
+}
+
+        

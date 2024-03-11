@@ -128,8 +128,67 @@
             
         </table>
             
-               
+        <h2>For Inquiries:</h2> 
+        
+        <form id="myform">
+            <p class = "form">
+                <fieldset>
+                    <legend>Name:</legend>
+                    <label for="fname">First name:</label><br>
+                    <input type="text" id="fname" name="fname" value=""><br>
+                    <label for="lname">Last name:</label><br>
+                    <input type="text" id="lname" name="lname" value=""><br><br>
+                </fieldset>
+            </p>
+        
+            <p class = "form">
+                <div class = "question">Email</div>  <input type="email" id="email" name="email" value=""><br>
+            </p>
+        
+            <p class = "form">
+                <div class = "question">How can we help you today?</div><br>
+                <input type="checkbox" id="general" name="general" value = "I have a general question."> I have a general question. <br>
+                <input type="checkbox" id="complaint" name="complaint" value = "I have a complaint"> I have a complaint. <br>
+                <input type="checkbox" id="partnership" name="partnership" value = "I'm interested in a partnership"> I'm interested in partnership opportunities. <br>
+                <input type="checkbox" id="feedback" name="feedback" value = "feedback or testimonial"> I want to provide feedback or a testimonial. <br>
+            </p>
+        
+            <p class = "form">
+                <div class = "question">How did you hear about us?</div>
+                <select id = "hear" name="hear">
+                    <option value="Online Search">Online Search</option>
+                    <option value="Social Media">Social Media</option>
+                    <option value="Event or Conference">Event or Conference</option>
+                    <option value="other">Other</option>
+                </select>
+                <br> <br> <div class = "question">Any comments?</div><br> <br>
+                <textarea id= "message" name="message" rows="10" cols="30">
+                </textarea>
+            </p>
+        
+            <p class = "form">
+                <div class = "question">Rate your experience:</div>
+                <br>
+                0 <input type="range" id="rating" name="rating" min="0" max="100" value="50">
+                <output name="ratingOutput" for="rating">100</output>
+                <br><br>
+            </p>
+        
+            <p class = "form">
+                <div class = "question">Would you like to subscribe to the newsletter?</div>  <br>
+                <input type="radio" value="Yes" name="choice" id="yes">Yes
+                <input type="radio" value="No" name="choice" id="no"> No
+            </p>
+        
+            <p class = "form">
+                <input type="submit" value="Submit" onclick="saveFormdata()">
+                <input type="reset">
+            </p>
+        </form>
+
             
+        
+       
 
 
         

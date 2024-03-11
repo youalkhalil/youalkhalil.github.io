@@ -139,3 +139,52 @@ display: block;
     display: inline-block
 }
 
+
+form{
+font-size: 20px;
+color: red;
+padding:3px;
+border: 4px solid black;
+background-color: beige;
+}
+
+.form{
+ 
+    color: red;
+    
+}
+
+legend{
+color: black;
+    font-size: 25px;
+}
+
+input[type = "submit"]{
+
+    color: red;
+    border: 2px solid black;
+    border-radius: 10%;
+}
+
+input[type = "reset"]{
+
+    color: red;
+    border: 2px solid black;
+    border-radius: 10%;
+}
+
+.message{
+
+    border: 2px solid black;
+
+    border-radius: 10%;
+    
+}
+
+.question{
+
+    color: black;
+    border: none;
+    font-weight: bold;
+}
+
