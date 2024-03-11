@@ -64,8 +64,9 @@ function mOver(some_tag){
 }
 
 // function to save and log form data
-function saveFormdata() {
-  
+function saveFormdata(event) {
+  //prevent page from refreshig so the data can stay in console log
+  event.preventDefault();
   
   
   // saving first and last name
