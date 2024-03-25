@@ -162,10 +162,26 @@ function saveFormdata(event) {
 
 
          }
+
+        
          
     
          
 
 }
+
+function toggleHighContrast() {
+  
+  document.body.classList.toggle('high-contrast')
+  
+
+ }
+
+ function enlargeFont() {
+  
+  document.body.classList.toggle('bigfont')
+  
+
+ }
 
         

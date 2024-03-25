@@ -188,3 +188,21 @@ input[type = "reset"]{
     font-weight: bold;
 }
 
+.high-contrast{
+    background-color: black;
+    color: white;
+}
+
+ .high-contrast a:visited {
+    color: yellow
+}
+
+.high-contrast div, .high-contrast span, .high-contrast p, .high-contrast h1, .high-contrast h2, .high-contrast h3, .high-contrast dt,.high-contrast dd, .high-contrast li, .high-contrast form {
+    background-color: #000 !important;
+    color: #fff !important;
+}
+
+.bigfont div, .bigfont span, .bigfont p, .bigfont h1, .bigfont h2, .bigfont h3, .bigfont dt, .bigfont dd, .bigfont li, .bigfont form  {
+
+    font-size: xx-large;
+}
